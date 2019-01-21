@@ -1,0 +1,18 @@
+{
+  "name": "Node-Restful",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "ScooB",
+  "license": "none",
+  "scripts": {
+    "start": "node app.js",
+    "watch": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}   
