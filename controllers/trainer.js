@@ -7,7 +7,17 @@ exports.test = function (req, res) {
 exports.alltrainer = function (req, res) {
     Trainer.find( function (err, trainer) {
         if (err) return next(err);
-        res.send(trainer);
+        //res.send(trainer);
+
+        var json = JSON.stringify(trainer);
+        //console.log(json)
+        //console.log(typeof trainer.join())
+        //var jsonArray = JSON.parse(JSON.stringify(trainer))
+        //res.send(trainer.join());
+        //res.send(JSON.parse(JSON.stringify(trainer)))
+        res.send(json)
+        
+
     })
 };
 
